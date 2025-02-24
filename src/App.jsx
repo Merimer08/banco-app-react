@@ -7,12 +7,15 @@ import Summary from './Summary/Summary';
 
 
 function App() {
+  const handleLogin = (user, pin) => {
+    console.log('login successful!', user, pin);
+  }
   return (
     <>
       <nav>
         <Welcome />
         <img src="logo.png" alt="Logo" className="logo" />
-        <Login />
+        <Login onLogin={handleLogin} />
       </nav>
 
       <main className="app">
