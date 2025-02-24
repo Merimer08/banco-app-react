@@ -3,6 +3,8 @@ import Welcome from './Welcome/Welcome';
 import Login from './Login/Login';
 import Balance from './Balance/Balance';
 import Movements from './Movements/Movements';
+import Summary from './Summary/Summary';
+
 
 function App() {
   return (
@@ -21,15 +23,7 @@ function App() {
         <Movements />
 
         {/* SUMMARY */}
-        <div className="summary">
-          <p className="summary__label">In</p>
-          <p className="summary__value summary__value--in">0000€</p>
-          <p className="summary__label">Out</p>
-          <p className="summary__value summary__value--out">0000€</p>
-          <p className="summary__label">Interest</p>
-          <p className="summary__value summary__value--interest">0000€</p>
-          <button className="btn--sort">&downarrow; SORT</button>
-        </div>
+        <Summary movements={[200, 450, -400, 3000, -650, -130, 70, 1300]} />
 
         {/* OPERATION: TRANSFERS */}
         <div className="operation operation--transfer">

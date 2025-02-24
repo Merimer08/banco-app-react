@@ -1,3 +1,5 @@
+
+/* SUMMARY */
 .summary {
   grid-row: 5 / 6;
   display: flex;
@@ -34,8 +36,4 @@
   font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
-}
-
-.btn--sort:hover {
-  color: #666;
 }
